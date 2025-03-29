@@ -10,8 +10,6 @@ const Events = () => {
         {/* Header with centered title and right-aligned image */}
         <div className="relative flex items-center justify-center mb-12">
           <div className="absolute -right-16 top-10">
-            {" "}
-            
             <Image
               src="/waocamera.png"
               alt="Wao Camera"
@@ -22,8 +20,6 @@ const Events = () => {
           </div>
 
           <div className="absolute -left-16 top-10">
-            {" "}
-            
             <Image
               src="/waocamera2.png"
               alt="Wao Camera2"
@@ -33,15 +29,6 @@ const Events = () => {
             />
           </div>
 
-          {/* <div className="absolute left-0 top-32">
-            <Image
-              src="/reel.png"
-              alt="Wao Camera"
-              height={450}
-              width={450}
-              className="mb-10"
-            />
-          </div> */}
           <h1 className="uppercase text-bold mt-20 text-5xl text-center text-yellow-500 font-bold drop-shadow-[0_0_4px_rgba(255,255,0,0.4)]">
             Events
           </h1>
@@ -57,7 +44,12 @@ const Events = () => {
             >
               <div className="relative flex flex-col items-center justify-center sm:w-96 w-[80vw] overflow-hidden h-[20vh] lg:h-[30vh] mb-10">
                 <div className="relative w-full h-full overflow-hidden lg:rounded-3xl bg-[#13162d]">
-                  <img src="/bg.png" alt="bg-image" />
+                  <Image
+                    src="/bg.png"
+                    alt="bg-image"
+                    layout="fill"
+                    objectFit="cover"
+                  />
                 </div>
 
                 <Image
@@ -94,7 +86,12 @@ const Events = () => {
             >
               <div className="relative flex flex-col items-center justify-center sm:w-96 w-[80vw] overflow-hidden h-[20vh] lg:h-[30vh] mb-10">
                 <div className="relative w-full h-full overflow-hidden lg:rounded-3xl bg-[#13162d]">
-                  <img src="/bg.png" alt="bg-image" />
+                  <Image
+                    src="/bg.png"
+                    alt="bg-image"
+                    layout="fill"
+                    objectFit="cover"
+                  />
                 </div>
                 <Image
                   src="/script.jpg"
@@ -129,7 +126,12 @@ const Events = () => {
             >
               <div className="relative flex flex-col items-center justify-center sm:w-96 w-[80vw] overflow-hidden h-[20vh] lg:h-[30vh] mb-10">
                 <div className="relative w-full h-full overflow-hidden lg:rounded-3xl bg-[#13162d]">
-                  <img src="/bg.png" alt="bg-image" />
+                  <Image
+                    src="/bg.png"
+                    alt="bg-image"
+                    layout="fill"
+                    objectFit="cover"
+                  />
                 </div>
                 <Image
                   src="/film.jpg"

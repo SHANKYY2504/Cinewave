@@ -9,8 +9,7 @@ const Workshop = () => {
     <section id="workshop">
       <div>
         <div className="relative w-full">
-
-        <Image
+          <Image
             src="/board.png"
             alt="Left Decoration"
             width={600}
@@ -24,18 +23,14 @@ const Workshop = () => {
             height={650}
             className="absolute right-[-305px] top-[-20px] mt-12"
           />
-
-          
         </div>
 
-      
-
-        <h1 className=" uppercase text-bold text-5xl text-center mt-20  text-yellow-500 font-bold drop-shadow-[0_0_4px_rgba(255,255,0,0.4)] mb-12">
+        <h1 className="uppercase text-bold text-5xl text-center mt-20 text-yellow-500 font-bold drop-shadow-[0_0_4px_rgba(255,255,0,0.4)] mb-12">
           Domains
         </h1>
 
         <section className="w-full py-20 -mt-10">
-          <div className="my-20 flex flex-col lg:flex-row items-center justify-center gap-4 ">
+          <div className="my-20 flex flex-col lg:flex-row items-center justify-center gap-4">
             <Card
               title="Editing workshop"
               icon={<AceternityIcon order="Editing" />}
@@ -60,7 +55,6 @@ const Workshop = () => {
                 ]}
                 dotSize={3}
               />
-
               <div className="absolute inset-0 [mask-image:radial-gradient(400px_at_center,white,transparent)] bg-black/50 dark:bg-black/90" />
             </Card>
             <Card
@@ -95,17 +89,14 @@ const Workshop = () => {
   );
 };
 
-const Card = ({
-  title,
-  icon,
-  children,
-  description,
-}: {
+interface CardProps {
   title: string;
   icon: React.ReactNode;
   children?: React.ReactNode;
   description: string;
-}) => {
+}
+
+const Card = ({ title, icon, children, description }: CardProps) => {
   const [hovered, setHovered] = React.useState(false);
   return (
     <div
@@ -138,9 +129,7 @@ const Card = ({
           {title}
         </h2>
         <h2
-          className=" text-sm dark:text-white  opacity-0 group-hover/canvas-card:opacity-100 relative z-10 text-black 
-        mt-4 font-bold group-hover/canvas-card:text-white group-hover/canvas-card:-translate-y-2 
-        transition duration-200 text-center"
+          className="text-sm dark:text-white opacity-0 group-hover/canvas-card:opacity-100 relative z-10 text-black mt-4 font-bold group-hover/canvas-card:text-white group-hover/canvas-card:-translate-y-2 transition duration-200 text-center"
           style={{ color: "#e4ecff" }}
         >
           {description}
@@ -150,7 +139,11 @@ const Card = ({
   );
 };
 
-const AceternityIcon = ({ order }: { order: string }) => {
+interface AceternityIconProps {
+  order: string;
+}
+
+const AceternityIcon = ({ order }: AceternityIconProps) => {
   return (
     <div>
       <button className="relative inline-flex h-12 overflow-hidden rounded-full p-[1px] focus:outline-none focus:ring-2 focus:ring-slate-400 focus:ring-offset-2 focus:ring-offset-slate-50">
@@ -163,7 +156,11 @@ const AceternityIcon = ({ order }: { order: string }) => {
   );
 };
 
-export const Icon = ({ className, ...rest }: any) => {
+interface IconProps extends React.SVGProps<SVGSVGElement> {
+  className?: string;
+}
+
+export const Icon = ({ className, ...rest }: IconProps) => {
   return (
     <svg
       xmlns="http://www.w3.org/2000/svg"
