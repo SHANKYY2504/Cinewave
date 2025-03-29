@@ -1,20 +1,18 @@
-import Hero from "@/components/Hero";
 
 import Events from "@/components/Events";
 import { FloatingNav } from "@/components/ui/FloatingNav";
-import { FaHome } from "react-icons/fa";
 import About from "@/components/About";
 import { navItems } from "@/data";
 import Workshop from "@/components/Workshop";
 import Hero2 from "@/components/Hero2";
 import Shortfilm from "@/components/Shortfilm";
-import Cine from "@/components/Cine";
+
 
 import Crew from "@/components/Crew";
 import Members from "@/components/Members";
 import Contact from "@/components/Contact";
 import Skeleton from "@/components/Skeleton";
-import Heronew from "@/components/Heronew";
+
 
 
 

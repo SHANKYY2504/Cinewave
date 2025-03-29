@@ -1,14 +1,13 @@
 import type { Config } from "tailwindcss";
 
 const svgToDataUri = require("mini-svg-data-uri");
-
 const colors = require("tailwindcss/colors");
 const {
   default: flattenColorPalette,
 } = require("tailwindcss/lib/util/flattenColorPalette");
 
 const config = {
-  darkMode: ["class"],
+  
   content: [
     "./pages/**/*.{ts,tsx}",
     "./components/**/*.{ts,tsx}",
@@ -26,7 +25,6 @@ const config = {
       },
     },
     extend: {
-      
       colors: {
         black: {
           DEFAULT: "#000",
@@ -100,13 +98,9 @@ const config = {
           to: { height: "0" },
         },
         'slide-left': {
-			  '0%': { transform: 'translateX(0)' },
-			  '100%': { transform: 'translateX(-100%)' },
-			},
-      animation: {
-        'slide-left-infinite': 'slide-left 8s linear infinite',
+          '0%': { transform: 'translateX(0)' },
+          '100%': { transform: 'translateX(-100%)' },
         },
-  
         spotlight: {
           "0%": {
             opacity: "0",
@@ -163,9 +157,9 @@ const config = {
             transform: "translate(calc(-50% - 0.5rem))",
           },
         },
-        plugins: [addVariablesForColors],
       },
       animation: {
+        'slide-left-infinite': 'slide-left 8s linear infinite',
         "accordion-down": "accordion-down 0.2s ease-out",
         "accordion-up": "accordion-up 0.2s ease-out",
         spotlight: "spotlight 2s ease .75s 1 forwards",
@@ -175,8 +169,7 @@ const config = {
         third: "moveInCircle 40s linear infinite",
         fourth: "moveHorizontal 40s ease infinite",
         fifth: "moveInCircle 20s ease infinite",
-        scroll:
-          "scroll var(--animation-duration, 40s) var(--animation-direction, forwards) linear infinite",
+        scroll: "scroll var(--animation-duration, 40s) var(--animation-direction, forwards) linear infinite",
       },
     },
   },

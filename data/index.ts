@@ -1,10 +1,10 @@
 export const navItems = [
     { name: "About", link: "#about" },
-    { name: "Short Film", link: "#film" },
-    { name: "Reel", link: "#reel" },
+    // { name: "Short Film", link: "#film" },
+    // { name: "Reel", link: "#reel" },
     { name: "Event", link: "#event" },
     { name: "Workshop", link: "#workshop" },
-    { name: "Crew", link: "#crew" },
+    // { name: "Crew", link: "#crew" },
     { name: "Contact us ", link: "#contactus" },
    
     
