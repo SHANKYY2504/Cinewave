@@ -62,7 +62,7 @@ const About: React.FC = () => {
                 various aspects of the craft, including scriptwriting, cinematography, directing, and editing.
               </p>
               <p className="text-base sm:text-lg mt-4 sm:mt-6">
-                We specialize in producing a diverse range of cinematic content, including short films, class songs, farewell videos, freshers' introduction videos, and campus tour films. Through these projects, we capture the essence of campus life,
+                We specialize in producing a diverse range of cinematic content, including short films, class songs, farewell videos, freshers&apos; introduction videos, and campus tour films. Through these projects, we capture the essence of campus life,
                 document significant moments, and create impactful narratives that resonate with our audience.
               </p>
               <p className="text-base sm:text-lg mt-4 sm:mt-6 text-gray-200">
